@@ -188,16 +188,39 @@ h1 {
 .input-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    color: #113735;
+}
+
+.additional-inputs {
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 25px;
     color: #113735;
 }
 
-.complexity-container .effort-container {
+.date-container, .complexity-container, .effort-container {
     display: flex;
-    gap: 35px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    gap: 5px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="number"], input[type="date"] {
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #113735;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.additional-inputs > div {
+    flex: 1;
+    margin: 0 10px;
 }
 
 .todo-input {
