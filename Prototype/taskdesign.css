@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3D6662;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.task-list .title, .priority-list .title {
+    font-size: 25px;
+    color: #3D6662;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+.header .divider {
+    border: 0;
+    height: 3px;
+    background-color: #92D0CA;
+    margin-top: -10px; /* adjust as necessary */
+    margin-left: 10px; /* align with the title margin */
+    width: calc(100% - 20px); /* adjust width to align with title */
+}
+
+.tasklist-divider .divider, .priority-divider .divider {
+    border: 0;
+    height: 2px;
+    background-color: #92D0CA;
+    margin-top: 30px; /* adjust as necessary */
+    margin-left: 10px; /* align with the title margin */
+    width: calc(100% - 20px); /* adjust width to align with title */
+}
+
+.taskName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust this value to your liking */
+    flex-direction: column;
+}
+
+.taskName input {
+    width: 75%; /* Makes the input field as long as the container */
+    border-radius: 20px; /* Adjust this value to make the input field more rounded */
+    padding: 10px; /* Adds some padding inside the input field */
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width of the input field */
+}
+
+.taskName label, .taskName input {
+    margin: 5px;
+}
+
+#taskName, #deadline, #complexity {
+    border: none;
+}
+
+.factor-container {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.deadline-container label, .complexity-container label, .effort-container label {
+    margin-left: 10px;
+}
+
+.deadline-container input, .complexity-container input, .effort-container input {
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #3D6662;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: #3D6662 2px solid;
+  }
+  
+  button:hover {
+    background-color: #3D6662;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  .addBtnTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 200px; /* or any specific width */
+    height: 50px; /* or any specific height */
+}
+

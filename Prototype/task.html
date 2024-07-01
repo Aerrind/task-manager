@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="taskdesign.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="max-width-container">
+            <div class="header">
+                <h1 class="title">TaskMaster</h1>
+                <hr class="divider">
+            </div>
+    
+            <div class="task-form-container">
+                <div class="taskName">
+                    <label for="taskName" class="taskName">
+                        <b> Name of Task </b>
+                    </label>
+                    <input type="text" id="taskName" placeholder="Task Name" class="taskName">
+                </div>
+                <div class="factor-container">
+                    <div class="deadline-container">
+                        <label for="deadline" class="deadline">
+                            <b> Deadline </b>
+                        </label>
+                        <input type="date" id="deadline" class="deadline">
+                    </div>
+                    <div class="complexity-container">
+                        <label for="complexity" class="complexity">
+                            <b> Complexity </b>
+                        </label>
+                        <input type="number" id="complexity" placeholder="(1-5)" min="1" max="5" class="complexity">
+                    </div>
+                    <div class="effort-container">
+                        <label for="effort" class="effort">
+                            <b> Effort </b>
+                        </label>
+                        <input type="number" id="effort" placeholder="(1-5)" min="1" max="5" class="effort">
+                    </div>
+                </div>
+            </div>
+        
+            <button class="addBtnTask">
+                <span class="btn-txt">Add Task</span>
+            </button>
+    
+                <div class="tasklist-divider">
+                    <hr class="divider">
+                </div>
+                    <!-- Task List -->
+                    <div class="task-list">
+                        <h1 class="title">Task List</h1>
+                        <ul id="taskList"></ul>
+                    </div>
+                        
+                    <!-- Prioritize Button -->
+                    <button class="addBtnTask prioritizeBtn">
+                        <span class="btn-txt">Prioritize</span>
+                    </button>
+                    
+            <div class="priority-divider">
+                <hr class="divider">
+            </div>
+
+            <div class="priority-list">
+                <h2 class="title"> Priority List</h2>
+                <ul id="priorityList"></ul>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
