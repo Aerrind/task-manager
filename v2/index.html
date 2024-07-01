@@ -32,9 +32,22 @@
     <!--                tasks display-->
                     <div class="input-container">
                         <input class="todo-input" placeholder="Add a new task...">
+                        <input type="date" id="deadline" class="deadline">
                         <button class="add-button">
                             <i class="fa fa-plus-circle"></i>
                         </button>
+                        <div class="complexity-container">
+                            <label for="complexity" class="complexity">
+                                <b> Complexity </b>
+                            </label>
+                            <input type="number" id="complexity" placeholder="(1-5)" min="1" max="5" class="complexity">
+                        </div>
+                        <div class="effort-container">
+                            <label for="effort" class="effort">
+                                <b> Effort </b>
+                            </label>
+                            <input type="number" id="effort" placeholder="(1-5)" min="1" max="5" class="effort">
+                        </div>
                     </div>
                     <div class="filters">
                         <div class="filter" data-filter="completed">Completed</div>

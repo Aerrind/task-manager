@@ -189,6 +189,15 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    color: #113735;
+}
+
+.complexity-container .effort-container {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .todo-input {
@@ -201,6 +210,13 @@ h1 {
     color: #03045e;
     font-size: 20px;
     margin-right: 10px;
+}
+
+.deadline {
+    padding: 10px 25px;
+    font-size: 20px;
+    color: #113735;
+    font-weight: 500;
 }
 
 .todo-input::placeholder {
