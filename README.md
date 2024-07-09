@@ -2,6 +2,11 @@
 
 T.A.S.K Master is a web-based task management application designed to help university students manage their tasks and assignments effectively. By utilizing a combination of Greedy-Heuristic algorithms and the Weighted Sum Model (WSM), this application prioritizes tasks based on deadlines, complexities, and required efforts to enhance productivity and reduce stress.
 
+## Getting Started
+1. Insert necessary details to the respective fields such as Task Name (string), Deadline (date), Complexity Level (int) and Effort Level (int).
+2. Press 'Add Task' button to add the information to the list of tasks below.
+3. To sort the list of tasks, press the 'Prioritize' button. The sorted list of tasks will appear in the right panel of the web app, from high priority to low.
+
 ## Features
 **Priority Scoring**: Assigns scores to tasks based on deadlines and other criteria to determine their urgency and importance.
 
@@ -12,7 +17,19 @@ T.A.S.K Master is a web-based task management application designed to help unive
 ## Usage
 **Add Tasks**: Enter the details of your tasks, including the deadline, complexity, and effort required.
 
+![image](https://github.com/Aerrind/task-manager/assets/117252398/575369b2-e183-4828-9835-5aa5f3efd355)
+
 **Priority List**: The application will display a sorted list of tasks based on their priority scores.
+
+```
+ function calculatePriority(task) {
+        const today = new Date();
+        const timeDiff = task.deadline - today;
+        const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); // Convert time difference to days
+        const deadlineScore = getDeadlineScore(daysLeft);
+        return ((0.30 * deadlineScore) + (0.50 * task.complexity) + (0.20 * task.effort)) / 3;
+    }
+```
 
 **Update Tasks**: Modify task details as needed and the application will re-prioritize the list accordingly.
 
